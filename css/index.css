@@ -6,10 +6,12 @@ body {
 }
 
 .header-button {
+  font-weight: 400;
+  font-size: .35em;
+  padding: 10px;
   float: left;
   clear: both;
   height: 5vh;
-  min-height: 36px;
   border-bottom: 1px solid rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 }
@@ -20,107 +22,45 @@ body {
 }
 
 .title {
-  font-size: .5em;
   display: inline-block;
+  position: relative;
   float: left;
-  margin: 10px;
+  clear: right;
+  text-align:left;
 
 }
 
 .time {
-  font-size: .5em;
   display: inline-block;
-  float: left;
-  margin:10px;
+  position: relative;
+  float: center;
+  clear: both;
   text-align: center;
 
 }
 
 .tools {
-  font-size: .5em;
   display: inline-block;
+  position: relative;
   float: right;
-  margin:10px;
   text-align: right;
 
 }
 
 .more {
-  font-size: .5em;
-  display: inline-block;
-  float: right;
-  margin:10px;
-  text-align: right;
-
-}
-
-
-.top-left {
-  display: inline-block;
-  position: relative;
-  text-align: left;
-  margin-left: 10px;
-  float: left;
-  clear: both;
-  z-index: 0;
-
-  font-size: 1em;
-  text-transform: uppercase;
-}
-
-.top-right {
   display: inline-block;
   position: relative;
   float: right;
-  z-index: 1;
-  margin-right: 10px;
-
-  font-size: 1em;
   text-align: right;
-  text-transform: uppercase;
-}
-
-.mid-cen {
-  display: block;
-  float: center;
-  clear: both;
-  margin: 10px 10px 0 0;
-
-  font-size: 1em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.bot-left {
-  display: inline-block;
-  position: relative;
-  float: left;
-  clear: both;
-  text-align: left;
-  margin-left: 10px;
-  z-index: 3;
-
-  font-size: 1em;
-  text-transform: uppercase;
-}
-
-.bot-right {
-  display: inline-block;
-  position: relative;
-  float: right;
-
-  z-index: 4;
-  margin-right: 10px;
-
-  font-size: 1em;
-  text-align: right;
-  text-transform: uppercase;
 }
 
 .button {
+  text-transform: uppercase;
+  font-size: 1em;
+  padding:10px;
   float: left;
   clear: both;
-  height: 33vh;
+  height: 30vh;
   min-height: 200px;
   border-top: 1px solid rgb(0, 0, 0);
   border-bottom: 1px solid rgb(0, 0, 0);
@@ -131,6 +71,54 @@ body {
   background-color: rgb(0, 0, 0);
   color: white;
 }
+
+.top-left {
+  display: inline-block;
+  position: relative;
+  height: 33%;
+  text-align: left;
+  float: left;
+  clear: both;
+  z-index: 0;
+}
+
+.top-right {
+  display: inline-block;
+  position: relative;
+  height: 33%;
+  float: right;
+  clear: right;
+  z-index: 1;
+  text-align: right;
+}
+
+.mid-cen {
+  display: block;
+  float: center;
+  height: 33%;
+  clear: both;
+  text-align: center;
+}
+
+.bot-left {
+  display: inline-block;
+  position: relative;
+  height: 33%;
+  float: left;
+  text-align: left;
+  z-index: 3;
+}
+
+.bot-right {
+  display: inline-block;
+  height: 33%;
+  position: relative;
+  float: right;
+  z-index: 4;
+  text-align: right;
+}
+
+
 
 #MOVE {
 display: none;
@@ -175,56 +163,22 @@ display: none;
   background-color: rgb(0, 0, 0);
 }
 
-
-
-
-._container {
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-}
-
-.container-1 {
-  z-index: 15;
-  height: 10vh;
-  background-color: rgb(0, 0, 0);
-}
-
-.container-2 {
-  clear: both;
-  z-index: 20;
-  height: 37px;
-  margin-top: -371px;
-  border-bottom-color: rgb(255, 255, 255);
-}
-
 .element-1 {
   border-top-width: 4px;
   background-color: rgb(0, 0, 0);
 }
 
-.element-2 {
-  position: relative;
-  z-index: 8;
-  border-top-width: 2px;
-  background-color: rgb(255, 255, 255);
-}
 
 .footer {
+  font-weight: 400;
+  font-size: .35em;
+  color: white;
   float: left;
   clear: both;
-  width: 100%;
   height: 5vh;
-  min-height: 36px;
+  padding: 10px;
   border-bottom: 1px solid rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-}
-
-._container-1 {
-  float: left;
-  width: 100%;
-  height: 36px;
-  border-bottom-color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
 }
 
 ._container-2 {
