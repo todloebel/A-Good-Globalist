@@ -1,14 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-    <title="A Good Globalist">
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>index</title>
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/index-grid.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/blueprint.css">
+
 </head>
 <body>
+  <div class="container">
+  {% include header.html %}
+  {% include Movement.html %}
+  {% include Trade.html %}
+  {% include Access.html %}
+  {% include Footer.html %}
+
+
 
   {{content}}
-
+</div>
 </body>
 </html>
