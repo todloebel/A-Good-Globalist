@@ -1,4 +1,4 @@
-<button onClick="window.location='#movement-content';" class="button fluid-span-6">
+<button id="showTrade" class="button fluid-span-6">
   <span class="top-left fluid-span-1">02</span>
   <span class="top-right fluid-span-1">Fair</span>
   <span class="mid-cen fluid-span-6">Trade</span>
@@ -12,12 +12,9 @@
 </section>
 
 <script>
-function myFunction() {
-    var x = document.getElementById('TRADE');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
+$(document).ready(function showTrade(){
+    $("#showTrade").click(function(){
+        $("#TRADE").slideToggle("slow");
+    });
+});
 </script>

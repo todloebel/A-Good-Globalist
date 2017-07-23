@@ -3,19 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0">
-  <title>index</title>
+  <title>{{ page.title }}</title>
   <link rel="stylesheet" href="css/standardize.css">
   <link rel="stylesheet" href="css/index-grid.css">
   <link rel="stylesheet" href="css/index.css">
+  <script src="showContent.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-  <div class="page-container fluid-span-6">
   {% include header.html %}
-  {% include Movement.html %}
-  {% include Trade.html %}
-  {% include Access.html %}
+  <div class="page-container fluid-span-6">
+    {% include Movement.html %}
+    {% include Trade.html %}
+    {% include Access.html %}
+  </div>
   {% include Footer.html %}
   {{content}}
-</div>
 </body>
 </html>

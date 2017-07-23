@@ -5,14 +5,22 @@ body {
   text-rendering: geometricPrecision;
 }
 
+.page-container {
+  float: left;
+  clear: right;
+  height: 90vh;
+  background: url("data:image/svg+xml;base64,[data]");;
+  background-position: center;
+  background-size: contain;
+}
+
 .header-button {
   font-weight: 400;
   font-size: .35em;
   padding: 10px;
   float: left;
-  clear: both;
-  height: 5vh;
-  border-bottom: 1px solid rgb(0, 0, 0);
+  clear: right;
+  height: 6vh;
   background-color: rgb(255, 255, 255);
 }
 
@@ -20,6 +28,19 @@ body {
   background-color: rgb(0, 0, 0);
   color: white;
 }
+
+.About-Content {
+  font-weight: 400;
+  font-size: .35em;
+  padding: 10px;
+  float: left;
+  clear: right;
+  height: 30vh;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
 
 .title {
   display: inline-block;
@@ -32,19 +53,8 @@ body {
 
 .time {
   display: inline-block;
-  position: relative;
   float: center;
-  clear: both;
   text-align: center;
-
-}
-
-.tools {
-  display: inline-block;
-  position: relative;
-  float: right;
-  text-align: right;
-
 }
 
 .more {
@@ -62,9 +72,9 @@ body {
   clear: both;
   height: 30vh;
   min-height: 200px;
-  border-top: 1px solid rgb(0, 0, 0);
-  border-bottom: 1px solid rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  border-top: 3px solid rgb(0, 0, 0);
+  border-bottom: 0px solid rgb(0, 0, 0);
+  background-color: transparent;
 }
 
 .button:hover {
@@ -118,7 +128,9 @@ body {
   text-align: right;
 }
 
-
+#Above {
+display: none;
+}
 
 #MOVE {
 display: none;
@@ -175,8 +187,9 @@ display: none;
   color: white;
   float: left;
   clear: both;
-  height: 5vh;
+  height: 6vh;
   padding: 10px;
+  border-top: 2px solid rgb(255, 255, 255);
   border-bottom: 1px solid rgb(0, 0, 0);
   background-color: rgb(0, 0, 0);
 }

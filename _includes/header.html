@@ -1,21 +1,18 @@
-<section  id="ABOUT" class="movement-content fluid-span-6">
-  <div class="divsection divsection-4 clearfix">
-    <div class="text text-16">
-      <p>Globalization refers to the free movement of goods, capital, services, people, technology and information. It is the action or procedure of international integration of countries arising from the convergence of world views, products, ideas, and other aspects of culture.&nbsp;</p>
+  <div id="ABOUT" class="About-Content fluid-span-6">
+    <div class="Description fluid-span-3">
+      <p>Globalization refers to the free movement of goods, capital, services, people, technology and information. It is the action or procedure of international integration of countries arising from the convergence of world views, products, ideas, and other aspects of culture.</p></br>
       <p>A Good Globalist is one who promotes and extends the three principles of globalism: free movement of people, fair trade of goods, and open access to information. The meaning of these principles is explored below through images, charts, and maps. </p>
     </div>
   </div>
-</section>
 
-<button onClick="myFunction()" class="header-button fluid-span-6">
+<button id="showAbout" class="header-button fluid-span-6">
   <span class="title fluid-span-2">A Good Globalist</span>
-  <span id="time" class="time fluid-span-2">12:00AM New York, NY</span>
-  <span class="tools fluid-span-1">Tools</span>
-  <span class="more fluid-span-1">?</span>
+  <span id="time" class="time fluid-span-2"></span>
+  <span class="more fluid-span-2">?</span>
 </button>
 
-<script>
-function myFunction() {
+<!-- <script>
+function showAbout() {
     var x = document.getElementById('ABOUT');
     if (x.style.display === 'none') {
         x.style.display = 'block';
@@ -23,4 +20,35 @@ function myFunction() {
         x.style.display = 'none';
     }
 }
+</script> -->
+
+<script>
+(function () {
+    function checkTime(i) {
+        return (i < 10) ? "0" + i : i;
+    }
+
+    function startTime() {
+        var today = new Date(),
+            h = checkTime(today.getHours()),
+            m = checkTime(today.getMinutes()),
+            s = checkTime(today.getSeconds());
+        document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+        t = setTimeout(function () {
+            startTime()
+        }, 500);
+    }
+    startTime();
+})();
 </script>
+
+<script>
+$(document).ready(function showAbout(){
+    $("#showAbout").click(function(){
+        $("#ABOUT").slideToggle("slow");
+    });
+});
+</script>
+
+
+<!-- onClick="showAbout()" -->
