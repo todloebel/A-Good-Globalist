@@ -44,6 +44,14 @@ body {
   color: white;
 }
 
+.links {
+  float: right;
+  clear: left;
+  color: white;
+  
+
+}
+
 
 .title {
   display: inline-block;
