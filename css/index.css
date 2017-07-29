@@ -9,7 +9,7 @@ body {
   float: left;
   clear: right;
   height: 90vh;
-  background: url("../imgs/globe-background.svg");
+  background: url("../imgs/globe-background-new.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -18,18 +18,18 @@ body {
 .header-button {
   font-weight: 400;
   font-size: .35em;
+  color: white;
   padding: 10px;
   float: left;
   clear: right;
   height: 5vh;
-  border-top: 2px solid rgb(255, 255, 255);
   border-bottom: 2px solid rgb(255, 255, 255);
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
 }
 
 .header-button:hover {
-  background-color: rgb(0, 0, 0);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
 
 .About-Content {
@@ -44,14 +44,22 @@ body {
   color: white;
 }
 
-.links {
-  float: right;
-  clear: left;
-  color: white;
-  
+.Description {
+  display: inline-block;
+  float: left;
 
 }
 
+.Links {
+  display: inline-block;
+  float: right;
+  color: white;
+}
+
+a {
+  color: white;
+  text-transform: uppercase;
+}
 
 .title {
   display: inline-block;
@@ -83,7 +91,7 @@ body {
   clear: both;
   height: 30vh;
   min-height: 200px;
-  border-top: 2px solid rgb(0, 0, 0);
+  /*border-top: 2px solid rgb(0, 0, 0);*/
   border-bottom: 2px solid rgb(0, 0, 0);
   background: white;
   mix-blend-mode: exclusion;
@@ -205,8 +213,8 @@ display: none;
   height: 5vh;
   padding: 10px;
   position: relative;
-  border-top: 2px solid rgb(255, 255, 255);
-  border-bottom: 1px solid rgb(0, 0, 0);
+  border-top: .1px solid rgb(255, 255, 255);
+  /*border-bottom: 1px solid rgb(0, 0, 0);*/
   background-color: rgb(0, 0, 0);
 }
 
