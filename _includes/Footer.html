@@ -1,5 +1,48 @@
-<div class="footer fluid-span-6">
-  <span class="title fluid-span-2">A Good Globalist</span>
-  <span id="time" class="time fluid-span-2"></span>
-  <span class="more fluid-span-2">?</span>
+<div id="WILD" class="Photo-Content fluid-span-6">
+  <div class="img1 fluid-span-3"><img src="/imgs/overlays/overlay1.png"></div>
+  <div class="img2 fluid-span-3"><img src="/imgs/overlays/overlay1.png"></div>
+  <div class="img3 fluid-span-2"><img src="/imgs/overlays/overlay1.png"></div>
+  <div class="img4 fluid-span-4"><img src="/imgs/overlays/overlay1.png"></div>
+  <div class="img5 fluid-span-3"><img src="/imgs/overlays/overlay1.png"></div>
+  <div class="img6 fluid-span-3"><img src="/imgs/overlays/overlay1.png"></div>
+  <div class="img7 fluid-span-6"><img src="/imgs/overlays/overlay1.png"></div>
+  <div class="img8 fluid-span-4"><img src="/imgs/overlays/overlay1.png"></div>
+  <div class="img9 fluid-span-2"><img src="/imgs/overlays/overlay1.png"></div>
+  <div class="img10 fluid-span-3"><img src="/imgs/overlays/overlay1.png"></div>
+  <div class="img11 fluid-span-3"><img src="/imgs/overlays/overlay1.png"></div>
 </div>
+
+
+<button id="showWild" onclick="showAbout()" class="footer fluid-span-6">
+  <span class="title fluid-span-2">A Good Globalist</span>
+  <span id="time-f" class="time fluid-span-2"></span>
+  <span class="more fluid-span-2">?</span>
+</button>
+
+<script>
+(function () {
+    function checkTime(i) {
+        return (i < 10) ? "0" + i : i;
+    }
+
+    function startTime() {
+        var today = new Date(),
+            h = checkTime(today.getHours()),
+            m = checkTime(today.getMinutes()),
+            s = checkTime(today.getSeconds());
+        document.getElementById('time-f').innerHTML = h + ":" + m + ":" + s;
+        t = setTimeout(function () {
+            startTime()
+        }, 500);
+    }
+    startTime();
+})();
+</script>
+
+<script>
+$(document).ready(function showWild(){
+    $("#showWild").click(function(){
+        $("#WILD").slideToggle("slow");
+    });
+});
+</script>
