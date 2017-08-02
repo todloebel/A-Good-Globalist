@@ -7,10 +7,73 @@
 </button>
 <!-- <script src="funtions.js"></script> -->
 <section  id="MOVE" class="section-content fluid-span-6">
-  <div class="left-content fluid-span-3"></div>
-  <div class="right-content fluid-span-3"></div>
-  <p class="text"></p>
+  <div class="left-content fluid-span-1">
+    <ul class="hoverimage">
+      <li class="menu-item" data-image='../imgs/MOVEMENT/Earth.jpg'>
+        <a href="#">NASA, 1969</a></li>
+      <li class="menu-item" data-image='../imgs/MOVEMENT/Earth.jpg'>
+        <a href="#">Berlin Wall 1</a></li>
+      <li class="menu-item" data-image='../imgs/MOVEMENT/Earth.jpg'>
+        <a href="#">Name</a></li>
+    </ul>
+  </div>
+
+  <div class="center-content fluid-span-4">
+    <div class='img_conatainer'></div>
+  </div>
+
+
+  <div class="right-content fluid-span-1">
+    <ul class="hoverimage">
+        <li class="menu-item" data-image='http://cdn.instructables.com/FNK/CXB1/H9G190RO/FNKCXB1H9G190RO.MEDIUM.jpg'>NASA, 1969</li>
+        <li class="menu-item" data-image='http://cdn.instructables.com/F6E/CTDW/H9G190RP/F6ECTDWH9G190RP.LARGE.jpg'>Berlin Wall, 1980</a></li>
+        <li class="menu-item" data-image='http://cdn.instructables.com/F8B/YMOT/H9G190RL/F8BYMOTH9G190RL.LARGE.jpg'>menu option</a></li>
+    </ul>
+  </div>
 </section>
+
+<script>
+$(function(){
+    var imageContainer = '.img_conatainer',
+        imageList      = '.hoverimage',
+        maxWidth       = 'parent', // parent or specific css width/
+        defImage       = '../imgs/profile.jpg';
+    var $imageContainer = $(imageContainer).eq(0);
+    var $imageList      = $(imageList).eq(0);
+    if (maxWidth === 'parent') { maxWidth = $imageContainer.width() + 'px'; }
+    //Load images and set hover::
+    $imageList.find('li').each(function(index){
+        if (typeof $(this).data('image') === 'string') {
+            $imageContainer.append(
+                "<img id='imageToggle"+index+
+                "' src='"+$(this).data('image')+
+                "' style='max-width: "+maxWidth+"; display:none;' />"
+            );
+            $(this).data("image","imageToggle"+index);
+            $(this).hover(
+                function(){ loadImage($(this).data('image')); },
+                function(){ loadImage('imageToggleDef'); }
+            );
+        }
+    });
+    //Load default:
+    $imageContainer.append(
+                "<img id='imageToggleDef"+
+                "' src='"+defImage+
+                "' style='max-width: "+maxWidth+"' />"
+    );
+    //Toggle images:
+    function loadImage(imageId) {
+        $imageContainer.stop(true).fadeOut('fast', function(){
+            $(this).find('img').hide();
+            $(this).find('img#'+imageId).show();
+            $(this).fadeIn('fast');
+        });
+    }
+
+});
+</script>
+
 
 <script>
 $(document).ready(function showMovement(){
