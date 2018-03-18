@@ -374,8 +374,10 @@ a {
 .title {
   margin-bottom: 40px;
   padding-bottom: 40px;
+  color: #000;
   font-style: normal;
   font-weight: 700;
+  text-decoration: underline;
 }
 
 .title:hover {
@@ -398,6 +400,119 @@ a {
 .row-2 {
   margin-top: 24px;
   margin-bottom: 24px;
+}
+
+.link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.link-2 {
+  color: #000;
+}
+
+.link-3 {
+  color: #000;
+}
+
+.link-4 {
+  color: #000;
+}
+
+.link-5 {
+  color: #000;
+}
+
+.link-6 {
+  color: #000;
+}
+
+.link-7 {
+  color: #000;
+}
+
+.link-8 {
+  color: #000;
+}
+
+.link-9 {
+  color: #000;
+}
+
+.link-10 {
+  color: #000;
+}
+
+.link-11 {
+  color: #000;
+}
+
+.link-12 {
+  color: #000;
+}
+
+.link-13 {
+  color: #000;
+}
+
+.link-14 {
+  color: #000;
+}
+
+.link-15 {
+  color: #000;
+}
+
+.link-16 {
+  color: #000;
+}
+
+.link-17 {
+  color: #000;
+}
+
+.link-18 {
+  color: #000;
+}
+
+.link-19 {
+  color: #000;
+}
+
+.link-20 {
+  color: #000;
+}
+
+.link-21 {
+  color: #000;
+}
+
+.link-22 {
+  color: #000;
+}
+
+.link-23 {
+  color: #000;
+}
+
+.link-24 {
+  color: #000;
+}
+
+.link-25 {
+  color: #000;
+}
+
+.link-26 {
+  color: #000;
+}
+
+.link-27 {
+  color: #000;
+}
+
+.link-28 {
+  color: #000;
 }
 
 html.w-mod-js *[data-ix="display-none-trade"] {
